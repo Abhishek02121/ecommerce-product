@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="https://kit.fontawesome.com/3e35ffa6eb.js" crossorigin="anonymous"></script>
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+  </style>
+</head>
+<body>  
+<div class="container">
+  <div class="header">
+    <div class="menu-icon ">
+       <img onclick = "myFunction1()" class ="ex1 " src="./images/icon-menu.svg">
+       <img onclick = "myFunction()"  class="ex hide"src="./images/icon-close.svg">
+      </div> 
+    <img id="logo" src="./images/logo.svg">
+    <div class="nav">
+     <ul class="list">
+       <li>Collections</li>
+       <li>Men</li>
+       <li>Women</li>
+       <li>About</li>
+       <li>Contact</li>
+     </ul>
+    </div>
+    <div class="right-nav">
+      <img src="./images/icon-cart.svg">
+      <img src="./images/image-avatar.png">
+    </div>
+    <div class="phone-list ">
+      <ul class="small-list">
+       <li>Collections</li>
+       <li>Men</li>
+       <li>Women</li>
+       <li>About</li>
+       <li>Contact</li>
+     </ul>
+   </div>
+  </div>
+  <div class="wrapper">
+    <div class="first-half">
+      <div class="image-product">
+      <div id="chevron-left"><i class="fa-solid fa-circle-chevron-left"></i></div>
+      <img id="product" onclick="myFunction()" src="./images/image-product-1.jpg">
+      <div id="chevron-right"><i class="fa-solid fa-circle-chevron-right"></i></div>
+      </div>
+      <div class="thumbnail">
+        <img class="thumb"src="./images/image-product-1-thumbnail.jpg">
+        <img class="thumb"src="./images/image-product-2-thumbnail.jpg">
+        <img class="thumb"src="./images/image-product-3-thumbnail.jpg">
+        <img class="thumb"src="./images/image-product-4-thumbnail.jpg">        
+      </div>
+    </div>
+    <div class="second-half">
+    <span id="topSpan">SNEAKER COMPANY</span>
+    <h1>Fall Limited Edition <br>Sneakers</h1>
+    <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+    durable rubber outer sole, they’ll withstand everything the weather can offer.
+    </p> 
+    <span id="price">$125.00</span>
+    <span id="dis">50%</span><br>
+    <span id=og-price>$250.00</span>
+    <div class="button-action">
+    <div class="counter"><button onclick="minus()" id="sub">-</button><input type="text/number" maxlength="1" placeholder="0" id="number"><button onclick ="addition()" id="add">+</button></div>  
+    <button class="addCart">Add to cart</button>
+    </div>
+  </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Abhishek</a>.
+  </div>
+</div>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
